@@ -8,4 +8,5 @@ export const routes: Routes = [
     { path: '', redirectTo: 'planificateur', pathMatch: 'full' },
     { path: '**', redirectTo: 'planificateur' }
     
+    
 ];
