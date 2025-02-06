@@ -20,7 +20,7 @@ import { ConnexionComponent } from './components/connexion/connexion.component';
   imports: [RouterOutlet,RouterModule,RouterLink, LivreurComponent, 
     AccueilComponent, ChargerunetourneeComponent, LivreurComponent,ParametreComponent, TourneedujourComponent,
     PlanificateurComponent, AjusterunejourneeComponent, CartedesuivieComponent, ConstruireunejourneeComponent,
-    DashbordComponent, PlanfierunejourneeComponent, VisualiserunejourneeComponent, ConnexionComponent
+    DashbordComponent, PlanfierunejourneeComponent, VisualiserunejourneeComponent, ConnexionComponent,
   ], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] 
