@@ -3,13 +3,13 @@ import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { TableCommandesComponent } from "./components/table-commandes/table-commandes.component";
 import { DataProcessServiceService } from './services/data.process.service.service';
 import { FormsModule } from '@angular/forms';
+import { TableWithfilterComponent } from "./components/table-withfilter/table-withfilter.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterModule, RouterLink, TableCommandesComponent,
-    FormsModule
-  ], 
+    FormsModule, TableWithfilterComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] 
 })
