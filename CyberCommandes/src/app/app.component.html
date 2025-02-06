@@ -15,8 +15,23 @@
             </li>
         </ul>
     </div>
- 
- 
 </div>
 
 <router-outlet></router-outlet>
+<pre>
+        page : <input type="number"
+                        [ngModel]="page()"
+                        (ngModelChange)="page.set($event)"
+        />
+        nbParPage : <input type="number"
+                            [ngModel]="nbParpage()"
+                            (ngModelChange)="nbParpage.set($event)"
+                            />
+</pre>
+<app-table-commandes
+                    [data]="commande()"
+                    [page]="page()"
+                    [nbParpage]="nbParpage()"
+                    (pageChange)="page.set($event)"
+                    >
+</app-table-commandes>

@@ -1,0 +1,35 @@
+<table>
+    <thead>
+        <th>Num_commande</th>
+        <th>Client</th>
+        <th>Date</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        @for (c of commandes(); track c.num_commande) {
+            <tr>
+                <td>
+                    {{c.num_commande}}
+                </td>
+                <td>
+                    {{c.client}}
+                </td>
+                <td>
+                    {{c.date}}
+                </td>
+                <td>
+                    {{c.etat}}
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button
+        (click)="previousPage()"
+        [disabled]="page() === 0"
+>Prec</button>
+Page courante {{page()}}
+<button
+        (click)="nextPage()"
+>Suiv</button>
