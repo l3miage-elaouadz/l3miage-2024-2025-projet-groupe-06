@@ -1,16 +1,1 @@
-<p>Hello</p>
 
-<div style="height: 300px;"
-     leaflet 
-     [leafletOptions]="options"
-     [leafletZoom]="zoom()"
-     [leafletCenter]="center()"
-     (leafletClick)="onMapClick($event.latlng)"> 
-</div>
-
-<h4>Latitude:</h4><input type="number" [(ngModel)] ="latitude" name="Latitude">
-<h4>Longitude:</h4><input type="number" [(ngModel)] ="longitude" name="Longitude">
-<h4>Zoom:</h4><input type="number" [(ngModel)] ="zoom" name="Zoom">
-
-<h4>Adresse:</h4>
-<p>{{ address }}</p>
